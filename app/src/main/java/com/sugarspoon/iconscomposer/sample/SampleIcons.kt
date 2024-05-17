@@ -18,14 +18,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.sugarspoon.icons.generated.IconsModel
-import com.sugarspoon.icons.generated.SugarSpoonIcons.Outline
+import com.sugarspoon.icons.generated.SugarSpoonIcons
 import java.util.Locale
 
 @Composable
 fun SampleIcons() {
 
     var query by remember { mutableStateOf("") }
-    val icons = Outline.getAll().filter {
+    val icons = SugarSpoonIcons.Outline.getAll().filter {
         it.name.startsWith(query.replaceFirstChar {
             if (it.isLowerCase()) it.titlecase(Locale.ROOT) else it.toString()
         })
@@ -48,7 +48,7 @@ fun SampleIcons() {
                 },
                 leadingIcon = {
                     Icon(
-                        painter = painterResource(id = Outline.Search),
+                        painter = painterResource(id = SugarSpoonIcons.Outline.Search),
                         contentDescription = null
                     )
                 },

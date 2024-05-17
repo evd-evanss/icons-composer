@@ -1,8 +1,14 @@
-package com.sugarspoon.composer
+package com.sugarspoon.poet
 
 import com.android.ide.common.vectordrawable.Svg2Vector
-import com.squareup.kotlinpoet.*
+import com.squareup.kotlinpoet.ClassName
+import com.squareup.kotlinpoet.CodeBlock
+import com.squareup.kotlinpoet.FileSpec
+import com.squareup.kotlinpoet.FunSpec
+import com.squareup.kotlinpoet.KModifier
 import com.squareup.kotlinpoet.ParameterizedTypeName.Companion.parameterizedBy
+import com.squareup.kotlinpoet.PropertySpec
+import com.squareup.kotlinpoet.TypeSpec
 import java.io.File
 import java.net.URL
 import java.nio.file.Files
@@ -10,12 +16,12 @@ import java.nio.file.Paths
 import java.util.zip.ZipInputStream
 import kotlin.io.path.createDirectories
 
-class IconsGenerator {
+class IconsPoet {
 
-    fun process(iconsInfo: IconsInfo) {
+    fun generate(iconsInfo: IconsInfo) {
         removeOldIcons(iconsInfo)
         val icons = downloadAndUnzipIcons(iconsInfo)
-        generateInterface(icons, iconsInfo.tag)
+        generateInterface(icons)
         generateIconClass(icons, iconsInfo)
     }
 
@@ -43,11 +49,11 @@ class IconsGenerator {
                     zipInputStream.closeEntry()
                     continue
                 }
-                if (entry.name.contains("._")){
+                if (entry.name.contains("._")) {
                     zipInputStream.closeEntry()
                     continue
                 }
-                if (entry.name.contains(".DS_Store") or entry.name.contains("ZWNJbag_2")){
+                if (entry.name.contains(".DS_Store") or entry.name.contains("ZWNJbag_2")) {
                     zipInputStream.closeEntry()
                     continue
                 }
@@ -90,49 +96,44 @@ class IconsGenerator {
 
                 val resourceName = xmlFileName.removeSuffix(".xml")
 
-                val iconName = resourceName
+                val iconNameKotlin = resourceName
                     .removePrefix("ic_")
                     .split("_")
                     .joinToString("") {
                         it.replaceFirstChar { c -> c.uppercase() }
                     }
 
-                println("icon kt = $iconName")
-                icons.add(Pair(iconName, resourceName))
+                println("icon kt = $iconNameKotlin")
+                icons.add(Pair(iconNameKotlin, resourceName))
             }
         }
         return icons
     }
 
-    private fun generateInterface(
-        icons: List<Pair<String, String>>,
-        tag: String,
-    ) {
-        val iconsCommonsInterface = TypeSpec.interfaceBuilder(ICONS_INTERFACE_NAME)
+    private fun generateInterface(icons: List<Pair<String, String>>) {
+        val typeSpecInterface = TypeSpec.interfaceBuilder(ICONS_INTERFACE_NAME)
         val list = ClassName("kotlin.collections", "List")
-        val names = ClassName(
+        val iconsModel = ClassName(
             PACKAGE_FOR_GEN_INTERFACE_CORE,
             "IconsModel"
         )
-        val listOfNames = list.parameterizedBy(names)
+        val iconsModelList = list.parameterizedBy(iconsModel)
 
-        iconsCommonsInterface
-            .addFunction(
-                FunSpec.builder("getAll")
-                    .addModifiers(KModifier.ABSTRACT)
-                    .returns(listOfNames).build()
-            )
-
+        typeSpecInterface.addFunction(
+            FunSpec.builder("getAll")
+                .addModifiers(KModifier.ABSTRACT)
+                .returns(iconsModelList).build()
+        )
 
         icons.sortedBy { it.first }.forEach { (iconName) ->
             val property = PropertySpec
                 .builder(iconName, ClassName("kotlin", "Int"))
                 .build()
 
-            iconsCommonsInterface.addProperty(property)
+            typeSpecInterface.addProperty(property)
         }
         val file = FileSpec.builder(PACKAGE_FOR_GEN_INTERFACE_CORE, ICONS_INTERFACE_NAME)
-            .addType(iconsCommonsInterface.build())
+            .addType(typeSpecInterface.build())
             .indent("    ")
             .build()
 
@@ -145,7 +146,7 @@ class IconsGenerator {
     }
 
     private fun generateIconClass(
-        illustrations: List<Pair<String, String>>,
+        icons: List<Pair<String, String>>,
         iconsInfo: IconsInfo,
     ) {
         val kotlinArrayList = ClassName("kotlin.collections", "ArrayList")
@@ -162,8 +163,7 @@ class IconsGenerator {
         val listOfAssetModel = kotlinList.parameterizedBy(assetModel)
         val arrayListOfModels = kotlinArrayList.parameterizedBy(assetModel)
 
-
-        val illustrationBrandClass = TypeSpec
+        val iconsOutlineClass = TypeSpec
             .classBuilder(iconsInfo.nameToClass)
             .addModifiers(KModifier.INTERNAL)
             .addSuperinterface(illustrationAssetsInterface)
@@ -175,7 +175,7 @@ class IconsGenerator {
             .addStatement("val assets = %T()", arrayListOfModels)
 
 
-        illustrations.sortedBy { it.first }.forEach { (iconName, iconResource) ->
+        icons.sortedBy { it.first }.forEach { (iconName, iconResource) ->
             val property = PropertySpec
                 .builder(iconName, kotlinInt)
                 .addModifiers(KModifier.OVERRIDE)
@@ -197,14 +197,14 @@ class IconsGenerator {
                 )
             )
 
-            illustrationBrandClass.addProperty(property)
+            iconsOutlineClass.addProperty(property)
         }
         funGetIllustrations.addStatement("return assets")
-        illustrationBrandClass.addFunction(funGetIllustrations.build())
+        iconsOutlineClass.addFunction(funGetIllustrations.build())
 
         val file = FileSpec.builder(PACKAGE_FOR_GEN_INTERFACE_CORE, iconsInfo.nameToClass)
             .addImport(R_PACKAGE_NAME, "R")
-            .addType(illustrationBrandClass.build())
+            .addType(iconsOutlineClass.build())
             .indent("    ")
             .build()
 

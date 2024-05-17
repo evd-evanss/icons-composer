@@ -1,4 +1,4 @@
-package com.sugarspoon.composer
+package com.sugarspoon.poet
 
 import java.nio.file.Path
 import java.nio.file.Paths
@@ -7,8 +7,7 @@ data class IconsInfo(
     val path: String,
     val pathToGenerateKt: Path = getKtPath(),
     val pathToDrawable: Path,
-    val nameToClass: String = "",
-    val tag: String = ""
+    val nameToClass: String = ""
 ) {
 
     companion object {

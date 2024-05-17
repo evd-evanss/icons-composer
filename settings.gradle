@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Icons Composer"
 include ':app'
-include ':composer'
+include ':poet'
 include ':icons'
