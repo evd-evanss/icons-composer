@@ -9,651 +9,651 @@ import kotlin.collections.ArrayList
 import kotlin.collections.List
 
 public object ArcoPainter : Painters {
-    public override val Alert: Painter
+    override val Alert: Painter
         @Composable
         get() = painterResource(R.drawable.ic_alert)
 
-    public override val Anticipation: Painter
+    override val Anticipation: Painter
         @Composable
         get() = painterResource(R.drawable.ic_anticipation)
 
-    public override val ArrowDown: Painter
+    override val ArrowDown: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_down)
 
-    public override val ArrowDownIn: Painter
+    override val ArrowDownIn: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_down_in)
 
-    public override val ArrowDownLeft: Painter
+    override val ArrowDownLeft: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_down_left)
 
-    public override val ArrowDownLeftCircle: Painter
+    override val ArrowDownLeftCircle: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_down_left_circle)
 
-    public override val ArrowDownRight: Painter
+    override val ArrowDownRight: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_down_right)
 
-    public override val ArrowExpand: Painter
+    override val ArrowExpand: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_expand)
 
-    public override val ArrowLeft: Painter
+    override val ArrowLeft: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_left)
 
-    public override val ArrowReturn: Painter
+    override val ArrowReturn: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_return)
 
-    public override val ArrowRight: Painter
+    override val ArrowRight: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_right)
 
-    public override val ArrowUp: Painter
+    override val ArrowUp: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_up)
 
-    public override val ArrowUpLeft: Painter
+    override val ArrowUpLeft: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_up_left)
 
-    public override val ArrowUpOut: Painter
+    override val ArrowUpOut: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_up_out)
 
-    public override val ArrowUpRight: Painter
+    override val ArrowUpRight: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_up_right)
 
-    public override val ArrowUpRightCircle: Painter
+    override val ArrowUpRightCircle: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrow_up_right_circle)
 
-    public override val ArrowsArrange: Painter
+    override val ArrowsArrange: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrows_arrange)
 
-    public override val ArrowsSelect: Painter
+    override val ArrowsSelect: Painter
         @Composable
         get() = painterResource(R.drawable.ic_arrows_select)
 
-    public override val Attachment: Painter
+    override val Attachment: Painter
         @Composable
         get() = painterResource(R.drawable.ic_attachment)
 
-    public override val Bad: Painter
+    override val Bad: Painter
         @Composable
         get() = painterResource(R.drawable.ic_bad)
 
-    public override val Bank: Painter
+    override val Bank: Painter
         @Composable
         get() = painterResource(R.drawable.ic_bank)
 
-    public override val BankAdd: Painter
+    override val BankAdd: Painter
         @Composable
         get() = painterResource(R.drawable.ic_bank_add)
 
-    public override val BarCode: Painter
+    override val BarCode: Painter
         @Composable
         get() = painterResource(R.drawable.ic_bar_code)
 
-    public override val Bookmark: Painter
+    override val Bookmark: Painter
         @Composable
         get() = painterResource(R.drawable.ic_bookmark)
 
-    public override val Briefcase: Painter
+    override val Briefcase: Painter
         @Composable
         get() = painterResource(R.drawable.ic_briefcase)
 
-    public override val Business: Painter
+    override val Business: Painter
         @Composable
         get() = painterResource(R.drawable.ic_business)
 
-    public override val BuyingOptionsCash: Painter
+    override val BuyingOptionsCash: Painter
         @Composable
         get() = painterResource(R.drawable.ic_buying_options_cash)
 
-    public override val BuyingOptionsFood: Painter
+    override val BuyingOptionsFood: Painter
         @Composable
         get() = painterResource(R.drawable.ic_buying_options_food)
 
-    public override val BuyingOptionsFuel: Painter
+    override val BuyingOptionsFuel: Painter
         @Composable
         get() = painterResource(R.drawable.ic_buying_options_fuel)
 
-    public override val BuyingOptionsHotelsTravels: Painter
+    override val BuyingOptionsHotelsTravels: Painter
         @Composable
         get() = painterResource(R.drawable.ic_buying_options_hotels_travels)
 
-    public override val BuyingOptionsMarket: Painter
+    override val BuyingOptionsMarket: Painter
         @Composable
         get() = painterResource(R.drawable.ic_buying_options_market)
 
-    public override val BuyingOptionsOnlineServices: Painter
+    override val BuyingOptionsOnlineServices: Painter
         @Composable
         get() = painterResource(R.drawable.ic_buying_options_online_services)
 
-    public override val BuyingOptionsSubscriptions: Painter
+    override val BuyingOptionsSubscriptions: Painter
         @Composable
         get() = painterResource(R.drawable.ic_buying_options_subscriptions)
 
-    public override val BuyingOptionsTransport: Painter
+    override val BuyingOptionsTransport: Painter
         @Composable
         get() = painterResource(R.drawable.ic_buying_options_transport)
 
-    public override val Calendar: Painter
+    override val Calendar: Painter
         @Composable
         get() = painterResource(R.drawable.ic_calendar)
 
-    public override val Camera: Painter
+    override val Camera: Painter
         @Composable
         get() = painterResource(R.drawable.ic_camera)
 
-    public override val CameraChange: Painter
+    override val CameraChange: Painter
         @Composable
         get() = painterResource(R.drawable.ic_camera_change)
 
-    public override val CameraScan: Painter
+    override val CameraScan: Painter
         @Composable
         get() = painterResource(R.drawable.ic_camera_scan)
 
-    public override val CameraScanBarCode: Painter
+    override val CameraScanBarCode: Painter
         @Composable
         get() = painterResource(R.drawable.ic_camera_scan_bar_code)
 
-    public override val Card: Painter
+    override val Card: Painter
         @Composable
         get() = painterResource(R.drawable.ic_card)
 
-    public override val CardFilled: Painter
+    override val CardFilled: Painter
         @Composable
         get() = painterResource(R.drawable.ic_card_filled)
 
-    public override val CardMachine: Painter
+    override val CardMachine: Painter
         @Composable
         get() = painterResource(R.drawable.ic_card_machine)
 
-    public override val Cellphone: Painter
+    override val Cellphone: Painter
         @Composable
         get() = painterResource(R.drawable.ic_cellphone)
 
-    public override val ChangeAccount: Painter
+    override val ChangeAccount: Painter
         @Composable
         get() = painterResource(R.drawable.ic_change_account)
 
-    public override val Chart: Painter
+    override val Chart: Painter
         @Composable
         get() = painterResource(R.drawable.ic_chart)
 
-    public override val Check: Painter
+    override val Check: Painter
         @Composable
         get() = painterResource(R.drawable.ic_check)
 
-    public override val ChevronDown: Painter
+    override val ChevronDown: Painter
         @Composable
         get() = painterResource(R.drawable.ic_chevron_down)
 
-    public override val ChevronLeft: Painter
+    override val ChevronLeft: Painter
         @Composable
         get() = painterResource(R.drawable.ic_chevron_left)
 
-    public override val ChevronRight: Painter
+    override val ChevronRight: Painter
         @Composable
         get() = painterResource(R.drawable.ic_chevron_right)
 
-    public override val ChevronRightSmall: Painter
+    override val ChevronRightSmall: Painter
         @Composable
         get() = painterResource(R.drawable.ic_chevron_right_small)
 
-    public override val ChevronUp: Painter
+    override val ChevronUp: Painter
         @Composable
         get() = painterResource(R.drawable.ic_chevron_up)
 
-    public override val CircleCheck: Painter
+    override val CircleCheck: Painter
         @Composable
         get() = painterResource(R.drawable.ic_circle_check)
 
-    public override val Close: Painter
+    override val Close: Painter
         @Composable
         get() = painterResource(R.drawable.ic_close)
 
-    public override val CoffeeEmpty: Painter
+    override val CoffeeEmpty: Painter
         @Composable
         get() = painterResource(R.drawable.ic_coffee_empty)
 
-    public override val CoffeeFull: Painter
+    override val CoffeeFull: Painter
         @Composable
         get() = painterResource(R.drawable.ic_coffee_full)
 
-    public override val Coin: Painter
+    override val Coin: Painter
         @Composable
         get() = painterResource(R.drawable.ic_coin)
 
-    public override val Contacts: Painter
+    override val Contacts: Painter
         @Composable
         get() = painterResource(R.drawable.ic_contacts)
 
-    public override val Contract: Painter
+    override val Contract: Painter
         @Composable
         get() = painterResource(R.drawable.ic_contract)
 
-    public override val Copy: Painter
+    override val Copy: Painter
         @Composable
         get() = painterResource(R.drawable.ic_copy)
 
-    public override val Delete: Painter
+    override val Delete: Painter
         @Composable
         get() = painterResource(R.drawable.ic_delete)
 
-    public override val Desktop: Painter
+    override val Desktop: Painter
         @Composable
         get() = painterResource(R.drawable.ic_desktop)
 
-    public override val Edit: Painter
+    override val Edit: Painter
         @Composable
         get() = painterResource(R.drawable.ic_edit)
 
-    public override val Education: Painter
+    override val Education: Painter
         @Composable
         get() = painterResource(R.drawable.ic_education)
 
-    public override val Email: Painter
+    override val Email: Painter
         @Composable
         get() = painterResource(R.drawable.ic_email)
 
-    public override val Entertainment: Painter
+    override val Entertainment: Painter
         @Composable
         get() = painterResource(R.drawable.ic_entertainment)
 
-    public override val ExportInvoice: Painter
+    override val ExportInvoice: Painter
         @Composable
         get() = painterResource(R.drawable.ic_export_invoice)
 
-    public override val EyeHidden: Painter
+    override val EyeHidden: Painter
         @Composable
         get() = painterResource(R.drawable.ic_eye_hidden)
 
-    public override val EyeVisible: Painter
+    override val EyeVisible: Painter
         @Composable
         get() = painterResource(R.drawable.ic_eye_visible)
 
-    public override val Facebook: Painter
+    override val Facebook: Painter
         @Composable
         get() = painterResource(R.drawable.ic_facebook)
 
-    public override val File: Painter
+    override val File: Painter
         @Composable
         get() = painterResource(R.drawable.ic_file)
 
-    public override val Filter: Painter
+    override val Filter: Painter
         @Composable
         get() = painterResource(R.drawable.ic_filter)
 
-    public override val FingerPrintId: Painter
+    override val FingerPrintId: Painter
         @Composable
         get() = painterResource(R.drawable.ic_finger_print_id)
 
-    public override val GestaoFinanceira: Painter
+    override val GestaoFinanceira: Painter
         @Composable
         get() = painterResource(R.drawable.ic_gestao_financeira)
 
-    public override val GestaoFinanceiraFilled: Painter
+    override val GestaoFinanceiraFilled: Painter
         @Composable
         get() = painterResource(R.drawable.ic_gestao_financeira_filled)
 
-    public override val Gift: Painter
+    override val Gift: Painter
         @Composable
         get() = painterResource(R.drawable.ic_gift)
 
-    public override val Glasses: Painter
+    override val Glasses: Painter
         @Composable
         get() = painterResource(R.drawable.ic_glasses)
 
-    public override val GraphArrowUp: Painter
+    override val GraphArrowUp: Painter
         @Composable
         get() = painterResource(R.drawable.ic_graph_arrow_up)
 
-    public override val Health: Painter
+    override val Health: Painter
         @Composable
         get() = painterResource(R.drawable.ic_health)
 
-    public override val Home: Painter
+    override val Home: Painter
         @Composable
         get() = painterResource(R.drawable.ic_home)
 
-    public override val HomeFilled: Painter
+    override val HomeFilled: Painter
         @Composable
         get() = painterResource(R.drawable.ic_home_filled)
 
-    public override val IdDocument: Painter
+    override val IdDocument: Painter
         @Composable
         get() = painterResource(R.drawable.ic_id_document)
 
-    public override val Image: Painter
+    override val Image: Painter
         @Composable
         get() = painterResource(R.drawable.ic_image)
 
-    public override val ImportUser: Painter
+    override val ImportUser: Painter
         @Composable
         get() = painterResource(R.drawable.ic_import_user)
 
-    public override val Information: Painter
+    override val Information: Painter
         @Composable
         get() = painterResource(R.drawable.ic_information)
 
-    public override val InformationFilled: Painter
+    override val InformationFilled: Painter
         @Composable
         get() = painterResource(R.drawable.ic_information_filled)
 
-    public override val Instagram: Painter
+    override val Instagram: Painter
         @Composable
         get() = painterResource(R.drawable.ic_instagram)
 
-    public override val Integration: Painter
+    override val Integration: Painter
         @Composable
         get() = painterResource(R.drawable.ic_integration)
 
-    public override val Invoice: Painter
+    override val Invoice: Painter
         @Composable
         get() = painterResource(R.drawable.ic_invoice)
 
-    public override val Invoice2: Painter
+    override val Invoice2: Painter
         @Composable
         get() = painterResource(R.drawable.ic_invoice2)
 
-    public override val Key: Painter
+    override val Key: Painter
         @Composable
         get() = painterResource(R.drawable.ic_key)
 
-    public override val Light: Painter
+    override val Light: Painter
         @Composable
         get() = painterResource(R.drawable.ic_light)
 
-    public override val Link: Painter
+    override val Link: Painter
         @Composable
         get() = painterResource(R.drawable.ic_link)
 
-    public override val Linkedin: Painter
+    override val Linkedin: Painter
         @Composable
         get() = painterResource(R.drawable.ic_linkedin)
 
-    public override val List: Painter
+    override val List: Painter
         @Composable
         get() = painterResource(R.drawable.ic_list)
 
-    public override val ListFilled: Painter
+    override val ListFilled: Painter
         @Composable
         get() = painterResource(R.drawable.ic_list_filled)
 
-    public override val Lock: Painter
+    override val Lock: Painter
         @Composable
         get() = painterResource(R.drawable.ic_lock)
 
-    public override val LockUnlocked: Painter
+    override val LockUnlocked: Painter
         @Composable
         get() = painterResource(R.drawable.ic_lock_unlocked)
 
-    public override val Magic: Painter
+    override val Magic: Painter
         @Composable
         get() = painterResource(R.drawable.ic_magic)
 
-    public override val Marking: Painter
+    override val Marking: Painter
         @Composable
         get() = painterResource(R.drawable.ic_marking)
 
-    public override val MenuNavigation: Painter
+    override val MenuNavigation: Painter
         @Composable
         get() = painterResource(R.drawable.ic_menu_navigation)
 
-    public override val MessagesChat: Painter
+    override val MessagesChat: Painter
         @Composable
         get() = painterResource(R.drawable.ic_messages_chat)
 
-    public override val Minus: Painter
+    override val Minus: Painter
         @Composable
         get() = painterResource(R.drawable.ic_minus)
 
-    public override val Money: Painter
+    override val Money: Painter
         @Composable
         get() = painterResource(R.drawable.ic_money)
 
-    public override val MoneyFilled: Painter
+    override val MoneyFilled: Painter
         @Composable
         get() = painterResource(R.drawable.ic_money_filled)
 
-    public override val MoneyHand: Painter
+    override val MoneyHand: Painter
         @Composable
         get() = painterResource(R.drawable.ic_money_hand)
 
-    public override val MoneySign: Painter
+    override val MoneySign: Painter
         @Composable
         get() = painterResource(R.drawable.ic_money_sign)
 
-    public override val Moon: Painter
+    override val Moon: Painter
         @Composable
         get() = painterResource(R.drawable.ic_moon)
 
-    public override val NewAccount: Painter
+    override val NewAccount: Painter
         @Composable
         get() = painterResource(R.drawable.ic_new_account)
 
-    public override val NewAccount2: Painter
+    override val NewAccount2: Painter
         @Composable
         get() = painterResource(R.drawable.ic_new_account_2)
 
-    public override val NewDeviceFaceId: Painter
+    override val NewDeviceFaceId: Painter
         @Composable
         get() = painterResource(R.drawable.ic_new_device_face_id)
 
-    public override val Notification01: Painter
+    override val Notification01: Painter
         @Composable
         get() = painterResource(R.drawable.ic_notification01)
 
-    public override val Notification02: Painter
+    override val Notification02: Painter
         @Composable
         get() = painterResource(R.drawable.ic_notification02)
 
-    public override val Openfinance: Painter
+    override val Openfinance: Painter
         @Composable
         get() = painterResource(R.drawable.ic_openfinance)
 
-    public override val Partners: Painter
+    override val Partners: Painter
         @Composable
         get() = painterResource(R.drawable.ic_partners)
 
-    public override val Passlimit: Painter
+    override val Passlimit: Painter
         @Composable
         get() = painterResource(R.drawable.ic_passlimit)
 
-    public override val PeopleUsers: Painter
+    override val PeopleUsers: Painter
         @Composable
         get() = painterResource(R.drawable.ic_people_users)
 
-    public override val Percentage: Painter
+    override val Percentage: Painter
         @Composable
         get() = painterResource(R.drawable.ic_percentage)
 
-    public override val Person: Painter
+    override val Person: Painter
         @Composable
         get() = painterResource(R.drawable.ic_person)
 
-    public override val PersonAdd: Painter
+    override val PersonAdd: Painter
         @Composable
         get() = painterResource(R.drawable.ic_person_add)
 
-    public override val PersonCircle: Painter
+    override val PersonCircle: Painter
         @Composable
         get() = painterResource(R.drawable.ic_person_circle)
 
-    public override val PersonExclusion: Painter
+    override val PersonExclusion: Painter
         @Composable
         get() = painterResource(R.drawable.ic_person_exclusion)
 
-    public override val PersonFilled: Painter
+    override val PersonFilled: Painter
         @Composable
         get() = painterResource(R.drawable.ic_person_filled)
 
-    public override val Phone: Painter
+    override val Phone: Painter
         @Composable
         get() = painterResource(R.drawable.ic_phone)
 
-    public override val Pig: Painter
+    override val Pig: Painter
         @Composable
         get() = painterResource(R.drawable.ic_pig)
 
-    public override val PinLocation: Painter
+    override val PinLocation: Painter
         @Composable
         get() = painterResource(R.drawable.ic_pin_location)
 
-    public override val Pix: Painter
+    override val Pix: Painter
         @Composable
         get() = painterResource(R.drawable.ic_pix)
 
-    public override val Plus: Painter
+    override val Plus: Painter
         @Composable
         get() = painterResource(R.drawable.ic_plus)
 
-    public override val Print: Painter
+    override val Print: Painter
         @Composable
         get() = painterResource(R.drawable.ic_print)
 
-    public override val Products: Painter
+    override val Products: Painter
         @Composable
         get() = painterResource(R.drawable.ic_products)
 
-    public override val Qrcode: Painter
+    override val Qrcode: Painter
         @Composable
         get() = painterResource(R.drawable.ic_qrcode)
 
-    public override val Question: Painter
+    override val Question: Painter
         @Composable
         get() = painterResource(R.drawable.ic_question)
 
-    public override val QuestionFilled: Painter
+    override val QuestionFilled: Painter
         @Composable
         get() = painterResource(R.drawable.ic_question_filled)
 
-    public override val ReadyToShip: Painter
+    override val ReadyToShip: Painter
         @Composable
         get() = painterResource(R.drawable.ic_ready_to_ship)
 
-    public override val Reload: Painter
+    override val Reload: Painter
         @Composable
         get() = painterResource(R.drawable.ic_reload)
 
-    public override val Rocket: Painter
+    override val Rocket: Painter
         @Composable
         get() = painterResource(R.drawable.ic_rocket)
 
-    public override val Search: Painter
+    override val Search: Painter
         @Composable
         get() = painterResource(R.drawable.ic_search)
 
-    public override val SearchX: Painter
+    override val SearchX: Painter
         @Composable
         get() = painterResource(R.drawable.ic_search_x)
 
-    public override val Selfie: Painter
+    override val Selfie: Painter
         @Composable
         get() = painterResource(R.drawable.ic_selfie)
 
-    public override val SendMessage: Painter
+    override val SendMessage: Painter
         @Composable
         get() = painterResource(R.drawable.ic_send_message)
 
-    public override val SendPix: Painter
+    override val SendPix: Painter
         @Composable
         get() = painterResource(R.drawable.ic_send_pix)
 
-    public override val Settings: Painter
+    override val Settings: Painter
         @Composable
         get() = painterResource(R.drawable.ic_settings)
 
-    public override val ShareAndroid: Painter
+    override val ShareAndroid: Painter
         @Composable
         get() = painterResource(R.drawable.ic_share_android)
 
-    public override val ShareIos: Painter
+    override val ShareIos: Painter
         @Composable
         get() = painterResource(R.drawable.ic_share_ios)
 
-    public override val Shield: Painter
+    override val Shield: Painter
         @Composable
         get() = painterResource(R.drawable.ic_shield)
 
-    public override val SignOutOff: Painter
+    override val SignOutOff: Painter
         @Composable
         get() = painterResource(R.drawable.ic_sign_out_off)
 
-    public override val Signature: Painter
+    override val Signature: Painter
         @Composable
         get() = painterResource(R.drawable.ic_signature)
 
-    public override val Smile: Painter
+    override val Smile: Painter
         @Composable
         get() = painterResource(R.drawable.ic_smile)
 
-    public override val Statement: Painter
+    override val Statement: Painter
         @Composable
         get() = painterResource(R.drawable.ic_statement)
 
-    public override val Store: Painter
+    override val Store: Painter
         @Composable
         get() = painterResource(R.drawable.ic_store)
 
-    public override val StoreTime: Painter
+    override val StoreTime: Painter
         @Composable
         get() = painterResource(R.drawable.ic_store_time)
 
-    public override val Sun: Painter
+    override val Sun: Painter
         @Composable
         get() = painterResource(R.drawable.ic_sun)
 
-    public override val Support: Painter
+    override val Support: Painter
         @Composable
         get() = painterResource(R.drawable.ic_support)
 
-    public override val Tag: Painter
+    override val Tag: Painter
         @Composable
         get() = painterResource(R.drawable.ic_tag)
 
-    public override val Terrible: Painter
+    override val Terrible: Painter
         @Composable
         get() = painterResource(R.drawable.ic_terrible)
 
-    public override val TimeClock: Painter
+    override val TimeClock: Painter
         @Composable
         get() = painterResource(R.drawable.ic_time_clock)
 
-    public override val TimeStopwatch: Painter
+    override val TimeStopwatch: Painter
         @Composable
         get() = painterResource(R.drawable.ic_time_stopwatch)
 
-    public override val Transactions: Painter
+    override val Transactions: Painter
         @Composable
         get() = painterResource(R.drawable.ic_transactions)
 
-    public override val UserProfileInvite: Painter
+    override val UserProfileInvite: Painter
         @Composable
         get() = painterResource(R.drawable.ic_user_profile_invite)
 
-    public override val Welcome: Painter
+    override val Welcome: Painter
         @Composable
         get() = painterResource(R.drawable.ic_welcome)
 
-    public override val Whatsapp: Painter
+    override val Whatsapp: Painter
         @Composable
         get() = painterResource(R.drawable.ic_whatsapp)
 
-    public override val World: Painter
+    override val World: Painter
         @Composable
         get() = painterResource(R.drawable.ic_world)
 
-    public override fun getAll(): List<IconModel> {
+    override fun getAll(): List<IconModel> {
         val assets = ArrayList<IconModel>()
         assets.add(IconModel(icon = R.drawable.ic_alert, name = "Alert"))
         assets.add(IconModel(icon = R.drawable.ic_anticipation, name = "Anticipation"))

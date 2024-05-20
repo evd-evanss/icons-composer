@@ -9,650 +9,650 @@ import kotlin.collections.List
 
 public object ArcoDrawable : Assets {
     @get:DrawableRes
-    public override val Alert: Int
+    override val Alert: Int
         get() = R.drawable.ic_alert
 
     @get:DrawableRes
-    public override val Anticipation: Int
+    override val Anticipation: Int
         get() = R.drawable.ic_anticipation
 
     @get:DrawableRes
-    public override val ArrowDown: Int
+    override val ArrowDown: Int
         get() = R.drawable.ic_arrow_down
 
     @get:DrawableRes
-    public override val ArrowDownIn: Int
+    override val ArrowDownIn: Int
         get() = R.drawable.ic_arrow_down_in
 
     @get:DrawableRes
-    public override val ArrowDownLeft: Int
+    override val ArrowDownLeft: Int
         get() = R.drawable.ic_arrow_down_left
 
     @get:DrawableRes
-    public override val ArrowDownLeftCircle: Int
+    override val ArrowDownLeftCircle: Int
         get() = R.drawable.ic_arrow_down_left_circle
 
     @get:DrawableRes
-    public override val ArrowDownRight: Int
+    override val ArrowDownRight: Int
         get() = R.drawable.ic_arrow_down_right
 
     @get:DrawableRes
-    public override val ArrowExpand: Int
+    override val ArrowExpand: Int
         get() = R.drawable.ic_arrow_expand
 
     @get:DrawableRes
-    public override val ArrowLeft: Int
+    override val ArrowLeft: Int
         get() = R.drawable.ic_arrow_left
 
     @get:DrawableRes
-    public override val ArrowReturn: Int
+    override val ArrowReturn: Int
         get() = R.drawable.ic_arrow_return
 
     @get:DrawableRes
-    public override val ArrowRight: Int
+    override val ArrowRight: Int
         get() = R.drawable.ic_arrow_right
 
     @get:DrawableRes
-    public override val ArrowUp: Int
+    override val ArrowUp: Int
         get() = R.drawable.ic_arrow_up
 
     @get:DrawableRes
-    public override val ArrowUpLeft: Int
+    override val ArrowUpLeft: Int
         get() = R.drawable.ic_arrow_up_left
 
     @get:DrawableRes
-    public override val ArrowUpOut: Int
+    override val ArrowUpOut: Int
         get() = R.drawable.ic_arrow_up_out
 
     @get:DrawableRes
-    public override val ArrowUpRight: Int
+    override val ArrowUpRight: Int
         get() = R.drawable.ic_arrow_up_right
 
     @get:DrawableRes
-    public override val ArrowUpRightCircle: Int
+    override val ArrowUpRightCircle: Int
         get() = R.drawable.ic_arrow_up_right_circle
 
     @get:DrawableRes
-    public override val ArrowsArrange: Int
+    override val ArrowsArrange: Int
         get() = R.drawable.ic_arrows_arrange
 
     @get:DrawableRes
-    public override val ArrowsSelect: Int
+    override val ArrowsSelect: Int
         get() = R.drawable.ic_arrows_select
 
     @get:DrawableRes
-    public override val Attachment: Int
+    override val Attachment: Int
         get() = R.drawable.ic_attachment
 
     @get:DrawableRes
-    public override val Bad: Int
+    override val Bad: Int
         get() = R.drawable.ic_bad
 
     @get:DrawableRes
-    public override val Bank: Int
+    override val Bank: Int
         get() = R.drawable.ic_bank
 
     @get:DrawableRes
-    public override val BankAdd: Int
+    override val BankAdd: Int
         get() = R.drawable.ic_bank_add
 
     @get:DrawableRes
-    public override val BarCode: Int
+    override val BarCode: Int
         get() = R.drawable.ic_bar_code
 
     @get:DrawableRes
-    public override val Bookmark: Int
+    override val Bookmark: Int
         get() = R.drawable.ic_bookmark
 
     @get:DrawableRes
-    public override val Briefcase: Int
+    override val Briefcase: Int
         get() = R.drawable.ic_briefcase
 
     @get:DrawableRes
-    public override val Business: Int
+    override val Business: Int
         get() = R.drawable.ic_business
 
     @get:DrawableRes
-    public override val BuyingOptionsCash: Int
+    override val BuyingOptionsCash: Int
         get() = R.drawable.ic_buying_options_cash
 
     @get:DrawableRes
-    public override val BuyingOptionsFood: Int
+    override val BuyingOptionsFood: Int
         get() = R.drawable.ic_buying_options_food
 
     @get:DrawableRes
-    public override val BuyingOptionsFuel: Int
+    override val BuyingOptionsFuel: Int
         get() = R.drawable.ic_buying_options_fuel
 
     @get:DrawableRes
-    public override val BuyingOptionsHotelsTravels: Int
+    override val BuyingOptionsHotelsTravels: Int
         get() = R.drawable.ic_buying_options_hotels_travels
 
     @get:DrawableRes
-    public override val BuyingOptionsMarket: Int
+    override val BuyingOptionsMarket: Int
         get() = R.drawable.ic_buying_options_market
 
     @get:DrawableRes
-    public override val BuyingOptionsOnlineServices: Int
+    override val BuyingOptionsOnlineServices: Int
         get() = R.drawable.ic_buying_options_online_services
 
     @get:DrawableRes
-    public override val BuyingOptionsSubscriptions: Int
+    override val BuyingOptionsSubscriptions: Int
         get() = R.drawable.ic_buying_options_subscriptions
 
     @get:DrawableRes
-    public override val BuyingOptionsTransport: Int
+    override val BuyingOptionsTransport: Int
         get() = R.drawable.ic_buying_options_transport
 
     @get:DrawableRes
-    public override val Calendar: Int
+    override val Calendar: Int
         get() = R.drawable.ic_calendar
 
     @get:DrawableRes
-    public override val Camera: Int
+    override val Camera: Int
         get() = R.drawable.ic_camera
 
     @get:DrawableRes
-    public override val CameraChange: Int
+    override val CameraChange: Int
         get() = R.drawable.ic_camera_change
 
     @get:DrawableRes
-    public override val CameraScan: Int
+    override val CameraScan: Int
         get() = R.drawable.ic_camera_scan
 
     @get:DrawableRes
-    public override val CameraScanBarCode: Int
+    override val CameraScanBarCode: Int
         get() = R.drawable.ic_camera_scan_bar_code
 
     @get:DrawableRes
-    public override val Card: Int
+    override val Card: Int
         get() = R.drawable.ic_card
 
     @get:DrawableRes
-    public override val CardFilled: Int
+    override val CardFilled: Int
         get() = R.drawable.ic_card_filled
 
     @get:DrawableRes
-    public override val CardMachine: Int
+    override val CardMachine: Int
         get() = R.drawable.ic_card_machine
 
     @get:DrawableRes
-    public override val Cellphone: Int
+    override val Cellphone: Int
         get() = R.drawable.ic_cellphone
 
     @get:DrawableRes
-    public override val ChangeAccount: Int
+    override val ChangeAccount: Int
         get() = R.drawable.ic_change_account
 
     @get:DrawableRes
-    public override val Chart: Int
+    override val Chart: Int
         get() = R.drawable.ic_chart
 
     @get:DrawableRes
-    public override val Check: Int
+    override val Check: Int
         get() = R.drawable.ic_check
 
     @get:DrawableRes
-    public override val ChevronDown: Int
+    override val ChevronDown: Int
         get() = R.drawable.ic_chevron_down
 
     @get:DrawableRes
-    public override val ChevronLeft: Int
+    override val ChevronLeft: Int
         get() = R.drawable.ic_chevron_left
 
     @get:DrawableRes
-    public override val ChevronRight: Int
+    override val ChevronRight: Int
         get() = R.drawable.ic_chevron_right
 
     @get:DrawableRes
-    public override val ChevronRightSmall: Int
+    override val ChevronRightSmall: Int
         get() = R.drawable.ic_chevron_right_small
 
     @get:DrawableRes
-    public override val ChevronUp: Int
+    override val ChevronUp: Int
         get() = R.drawable.ic_chevron_up
 
     @get:DrawableRes
-    public override val CircleCheck: Int
+    override val CircleCheck: Int
         get() = R.drawable.ic_circle_check
 
     @get:DrawableRes
-    public override val Close: Int
+    override val Close: Int
         get() = R.drawable.ic_close
 
     @get:DrawableRes
-    public override val CoffeeEmpty: Int
+    override val CoffeeEmpty: Int
         get() = R.drawable.ic_coffee_empty
 
     @get:DrawableRes
-    public override val CoffeeFull: Int
+    override val CoffeeFull: Int
         get() = R.drawable.ic_coffee_full
 
     @get:DrawableRes
-    public override val Coin: Int
+    override val Coin: Int
         get() = R.drawable.ic_coin
 
     @get:DrawableRes
-    public override val Contacts: Int
+    override val Contacts: Int
         get() = R.drawable.ic_contacts
 
     @get:DrawableRes
-    public override val Contract: Int
+    override val Contract: Int
         get() = R.drawable.ic_contract
 
     @get:DrawableRes
-    public override val Copy: Int
+    override val Copy: Int
         get() = R.drawable.ic_copy
 
     @get:DrawableRes
-    public override val Delete: Int
+    override val Delete: Int
         get() = R.drawable.ic_delete
 
     @get:DrawableRes
-    public override val Desktop: Int
+    override val Desktop: Int
         get() = R.drawable.ic_desktop
 
     @get:DrawableRes
-    public override val Edit: Int
+    override val Edit: Int
         get() = R.drawable.ic_edit
 
     @get:DrawableRes
-    public override val Education: Int
+    override val Education: Int
         get() = R.drawable.ic_education
 
     @get:DrawableRes
-    public override val Email: Int
+    override val Email: Int
         get() = R.drawable.ic_email
 
     @get:DrawableRes
-    public override val Entertainment: Int
+    override val Entertainment: Int
         get() = R.drawable.ic_entertainment
 
     @get:DrawableRes
-    public override val ExportInvoice: Int
+    override val ExportInvoice: Int
         get() = R.drawable.ic_export_invoice
 
     @get:DrawableRes
-    public override val EyeHidden: Int
+    override val EyeHidden: Int
         get() = R.drawable.ic_eye_hidden
 
     @get:DrawableRes
-    public override val EyeVisible: Int
+    override val EyeVisible: Int
         get() = R.drawable.ic_eye_visible
 
     @get:DrawableRes
-    public override val Facebook: Int
+    override val Facebook: Int
         get() = R.drawable.ic_facebook
 
     @get:DrawableRes
-    public override val File: Int
+    override val File: Int
         get() = R.drawable.ic_file
 
     @get:DrawableRes
-    public override val Filter: Int
+    override val Filter: Int
         get() = R.drawable.ic_filter
 
     @get:DrawableRes
-    public override val FingerPrintId: Int
+    override val FingerPrintId: Int
         get() = R.drawable.ic_finger_print_id
 
     @get:DrawableRes
-    public override val GestaoFinanceira: Int
+    override val GestaoFinanceira: Int
         get() = R.drawable.ic_gestao_financeira
 
     @get:DrawableRes
-    public override val GestaoFinanceiraFilled: Int
+    override val GestaoFinanceiraFilled: Int
         get() = R.drawable.ic_gestao_financeira_filled
 
     @get:DrawableRes
-    public override val Gift: Int
+    override val Gift: Int
         get() = R.drawable.ic_gift
 
     @get:DrawableRes
-    public override val Glasses: Int
+    override val Glasses: Int
         get() = R.drawable.ic_glasses
 
     @get:DrawableRes
-    public override val GraphArrowUp: Int
+    override val GraphArrowUp: Int
         get() = R.drawable.ic_graph_arrow_up
 
     @get:DrawableRes
-    public override val Health: Int
+    override val Health: Int
         get() = R.drawable.ic_health
 
     @get:DrawableRes
-    public override val Home: Int
+    override val Home: Int
         get() = R.drawable.ic_home
 
     @get:DrawableRes
-    public override val HomeFilled: Int
+    override val HomeFilled: Int
         get() = R.drawable.ic_home_filled
 
     @get:DrawableRes
-    public override val IdDocument: Int
+    override val IdDocument: Int
         get() = R.drawable.ic_id_document
 
     @get:DrawableRes
-    public override val Image: Int
+    override val Image: Int
         get() = R.drawable.ic_image
 
     @get:DrawableRes
-    public override val ImportUser: Int
+    override val ImportUser: Int
         get() = R.drawable.ic_import_user
 
     @get:DrawableRes
-    public override val Information: Int
+    override val Information: Int
         get() = R.drawable.ic_information
 
     @get:DrawableRes
-    public override val InformationFilled: Int
+    override val InformationFilled: Int
         get() = R.drawable.ic_information_filled
 
     @get:DrawableRes
-    public override val Instagram: Int
+    override val Instagram: Int
         get() = R.drawable.ic_instagram
 
     @get:DrawableRes
-    public override val Integration: Int
+    override val Integration: Int
         get() = R.drawable.ic_integration
 
     @get:DrawableRes
-    public override val Invoice: Int
+    override val Invoice: Int
         get() = R.drawable.ic_invoice
 
     @get:DrawableRes
-    public override val Invoice2: Int
+    override val Invoice2: Int
         get() = R.drawable.ic_invoice2
 
     @get:DrawableRes
-    public override val Key: Int
+    override val Key: Int
         get() = R.drawable.ic_key
 
     @get:DrawableRes
-    public override val Light: Int
+    override val Light: Int
         get() = R.drawable.ic_light
 
     @get:DrawableRes
-    public override val Link: Int
+    override val Link: Int
         get() = R.drawable.ic_link
 
     @get:DrawableRes
-    public override val Linkedin: Int
+    override val Linkedin: Int
         get() = R.drawable.ic_linkedin
 
     @get:DrawableRes
-    public override val List: Int
+    override val List: Int
         get() = R.drawable.ic_list
 
     @get:DrawableRes
-    public override val ListFilled: Int
+    override val ListFilled: Int
         get() = R.drawable.ic_list_filled
 
     @get:DrawableRes
-    public override val Lock: Int
+    override val Lock: Int
         get() = R.drawable.ic_lock
 
     @get:DrawableRes
-    public override val LockUnlocked: Int
+    override val LockUnlocked: Int
         get() = R.drawable.ic_lock_unlocked
 
     @get:DrawableRes
-    public override val Magic: Int
+    override val Magic: Int
         get() = R.drawable.ic_magic
 
     @get:DrawableRes
-    public override val Marking: Int
+    override val Marking: Int
         get() = R.drawable.ic_marking
 
     @get:DrawableRes
-    public override val MenuNavigation: Int
+    override val MenuNavigation: Int
         get() = R.drawable.ic_menu_navigation
 
     @get:DrawableRes
-    public override val MessagesChat: Int
+    override val MessagesChat: Int
         get() = R.drawable.ic_messages_chat
 
     @get:DrawableRes
-    public override val Minus: Int
+    override val Minus: Int
         get() = R.drawable.ic_minus
 
     @get:DrawableRes
-    public override val Money: Int
+    override val Money: Int
         get() = R.drawable.ic_money
 
     @get:DrawableRes
-    public override val MoneyFilled: Int
+    override val MoneyFilled: Int
         get() = R.drawable.ic_money_filled
 
     @get:DrawableRes
-    public override val MoneyHand: Int
+    override val MoneyHand: Int
         get() = R.drawable.ic_money_hand
 
     @get:DrawableRes
-    public override val MoneySign: Int
+    override val MoneySign: Int
         get() = R.drawable.ic_money_sign
 
     @get:DrawableRes
-    public override val Moon: Int
+    override val Moon: Int
         get() = R.drawable.ic_moon
 
     @get:DrawableRes
-    public override val NewAccount: Int
+    override val NewAccount: Int
         get() = R.drawable.ic_new_account
 
     @get:DrawableRes
-    public override val NewAccount2: Int
+    override val NewAccount2: Int
         get() = R.drawable.ic_new_account_2
 
     @get:DrawableRes
-    public override val NewDeviceFaceId: Int
+    override val NewDeviceFaceId: Int
         get() = R.drawable.ic_new_device_face_id
 
     @get:DrawableRes
-    public override val Notification01: Int
+    override val Notification01: Int
         get() = R.drawable.ic_notification01
 
     @get:DrawableRes
-    public override val Notification02: Int
+    override val Notification02: Int
         get() = R.drawable.ic_notification02
 
     @get:DrawableRes
-    public override val Openfinance: Int
+    override val Openfinance: Int
         get() = R.drawable.ic_openfinance
 
     @get:DrawableRes
-    public override val Partners: Int
+    override val Partners: Int
         get() = R.drawable.ic_partners
 
     @get:DrawableRes
-    public override val Passlimit: Int
+    override val Passlimit: Int
         get() = R.drawable.ic_passlimit
 
     @get:DrawableRes
-    public override val PeopleUsers: Int
+    override val PeopleUsers: Int
         get() = R.drawable.ic_people_users
 
     @get:DrawableRes
-    public override val Percentage: Int
+    override val Percentage: Int
         get() = R.drawable.ic_percentage
 
     @get:DrawableRes
-    public override val Person: Int
+    override val Person: Int
         get() = R.drawable.ic_person
 
     @get:DrawableRes
-    public override val PersonAdd: Int
+    override val PersonAdd: Int
         get() = R.drawable.ic_person_add
 
     @get:DrawableRes
-    public override val PersonCircle: Int
+    override val PersonCircle: Int
         get() = R.drawable.ic_person_circle
 
     @get:DrawableRes
-    public override val PersonExclusion: Int
+    override val PersonExclusion: Int
         get() = R.drawable.ic_person_exclusion
 
     @get:DrawableRes
-    public override val PersonFilled: Int
+    override val PersonFilled: Int
         get() = R.drawable.ic_person_filled
 
     @get:DrawableRes
-    public override val Phone: Int
+    override val Phone: Int
         get() = R.drawable.ic_phone
 
     @get:DrawableRes
-    public override val Pig: Int
+    override val Pig: Int
         get() = R.drawable.ic_pig
 
     @get:DrawableRes
-    public override val PinLocation: Int
+    override val PinLocation: Int
         get() = R.drawable.ic_pin_location
 
     @get:DrawableRes
-    public override val Pix: Int
+    override val Pix: Int
         get() = R.drawable.ic_pix
 
     @get:DrawableRes
-    public override val Plus: Int
+    override val Plus: Int
         get() = R.drawable.ic_plus
 
     @get:DrawableRes
-    public override val Print: Int
+    override val Print: Int
         get() = R.drawable.ic_print
 
     @get:DrawableRes
-    public override val Products: Int
+    override val Products: Int
         get() = R.drawable.ic_products
 
     @get:DrawableRes
-    public override val Qrcode: Int
+    override val Qrcode: Int
         get() = R.drawable.ic_qrcode
 
     @get:DrawableRes
-    public override val Question: Int
+    override val Question: Int
         get() = R.drawable.ic_question
 
     @get:DrawableRes
-    public override val QuestionFilled: Int
+    override val QuestionFilled: Int
         get() = R.drawable.ic_question_filled
 
     @get:DrawableRes
-    public override val ReadyToShip: Int
+    override val ReadyToShip: Int
         get() = R.drawable.ic_ready_to_ship
 
     @get:DrawableRes
-    public override val Reload: Int
+    override val Reload: Int
         get() = R.drawable.ic_reload
 
     @get:DrawableRes
-    public override val Rocket: Int
+    override val Rocket: Int
         get() = R.drawable.ic_rocket
 
     @get:DrawableRes
-    public override val Search: Int
+    override val Search: Int
         get() = R.drawable.ic_search
 
     @get:DrawableRes
-    public override val SearchX: Int
+    override val SearchX: Int
         get() = R.drawable.ic_search_x
 
     @get:DrawableRes
-    public override val Selfie: Int
+    override val Selfie: Int
         get() = R.drawable.ic_selfie
 
     @get:DrawableRes
-    public override val SendMessage: Int
+    override val SendMessage: Int
         get() = R.drawable.ic_send_message
 
     @get:DrawableRes
-    public override val SendPix: Int
+    override val SendPix: Int
         get() = R.drawable.ic_send_pix
 
     @get:DrawableRes
-    public override val Settings: Int
+    override val Settings: Int
         get() = R.drawable.ic_settings
 
     @get:DrawableRes
-    public override val ShareAndroid: Int
+    override val ShareAndroid: Int
         get() = R.drawable.ic_share_android
 
     @get:DrawableRes
-    public override val ShareIos: Int
+    override val ShareIos: Int
         get() = R.drawable.ic_share_ios
 
     @get:DrawableRes
-    public override val Shield: Int
+    override val Shield: Int
         get() = R.drawable.ic_shield
 
     @get:DrawableRes
-    public override val SignOutOff: Int
+    override val SignOutOff: Int
         get() = R.drawable.ic_sign_out_off
 
     @get:DrawableRes
-    public override val Signature: Int
+    override val Signature: Int
         get() = R.drawable.ic_signature
 
     @get:DrawableRes
-    public override val Smile: Int
+    override val Smile: Int
         get() = R.drawable.ic_smile
 
     @get:DrawableRes
-    public override val Statement: Int
+    override val Statement: Int
         get() = R.drawable.ic_statement
 
     @get:DrawableRes
-    public override val Store: Int
+    override val Store: Int
         get() = R.drawable.ic_store
 
     @get:DrawableRes
-    public override val StoreTime: Int
+    override val StoreTime: Int
         get() = R.drawable.ic_store_time
 
     @get:DrawableRes
-    public override val Sun: Int
+    override val Sun: Int
         get() = R.drawable.ic_sun
 
     @get:DrawableRes
-    public override val Support: Int
+    override val Support: Int
         get() = R.drawable.ic_support
 
     @get:DrawableRes
-    public override val Tag: Int
+    override val Tag: Int
         get() = R.drawable.ic_tag
 
     @get:DrawableRes
-    public override val Terrible: Int
+    override val Terrible: Int
         get() = R.drawable.ic_terrible
 
     @get:DrawableRes
-    public override val TimeClock: Int
+    override val TimeClock: Int
         get() = R.drawable.ic_time_clock
 
     @get:DrawableRes
-    public override val TimeStopwatch: Int
+    override val TimeStopwatch: Int
         get() = R.drawable.ic_time_stopwatch
 
     @get:DrawableRes
-    public override val Transactions: Int
+    override val Transactions: Int
         get() = R.drawable.ic_transactions
 
     @get:DrawableRes
-    public override val UserProfileInvite: Int
+    override val UserProfileInvite: Int
         get() = R.drawable.ic_user_profile_invite
 
     @get:DrawableRes
-    public override val Welcome: Int
+    override val Welcome: Int
         get() = R.drawable.ic_welcome
 
     @get:DrawableRes
-    public override val Whatsapp: Int
+    override val Whatsapp: Int
         get() = R.drawable.ic_whatsapp
 
     @get:DrawableRes
-    public override val World: Int
+    override val World: Int
         get() = R.drawable.ic_world
 
-    public override fun getAll(): List<IconModel> {
+    override fun getAll(): List<IconModel> {
         val assets = ArrayList<IconModel>()
         assets.add(IconModel(icon = Alert, name = "Alert"))
         assets.add(IconModel(icon = Anticipation, name = "Anticipation"))

@@ -88,7 +88,7 @@ class IconsPoet {
                 zipInputStream.closeEntry()
 
                 outFileXml.outputStream().buffered().use { outputStream ->
-                    Svg2Vector.parseSvgToXml(outFileSvg, outputStream)
+                    Svg2Vector.parseSvgToXml(outFileSvg.toPath(), outputStream)
                 }
 
                 outFileSvg.delete()
