@@ -3,13 +3,28 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
+        maven { url 'https://jitpack.io' }
     }
 }
 dependencyResolutionManagement {
+    def repoPropertiesFile = file("./build-system/repo.properties")
+    def repo = new Properties()
+    if (repoPropertiesFile.exists()) {
+        repo.load(new FileInputStream(repoPropertiesFile))
+    }
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        maven {
+            name 'Cora_Repository'
+            url = uri("https://repos.cora.tools/repository/maven-proxy")
+            credentials {
+                username = System.getenv('NEXUS_USER') ?: repo['USERNAME']
+                password = System.getenv('NEXUS_PASS') ?: repo['TOKEN']
+            }
+        }
+        maven { url 'https://jitpack.io' }
     }
 }
 rootProject.name = "Icons Composer"

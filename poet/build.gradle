@@ -14,11 +14,6 @@ dependencies {
     implementation("com.android.tools:sdk-common:30.4.2")
 }
 
-//tasks.register<JavaExec>("icons") {
-//    mainClass.set("com.sugarspoon.composer.MainKt")
-//    classpath = sourceSets.getByName("main").runtimeClasspath
-//}
-
 task getIcons(type: JavaExec) {
     mainClass.set('com.sugarspoon.composer.MainKt')
     classpath = sourceSets.getByName("main").runtimeClasspath

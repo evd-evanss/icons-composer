@@ -12,7 +12,7 @@
         android:theme="@style/Theme.IconsComposer"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.cora.app.ui.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.IconsComposer">

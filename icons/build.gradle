@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.sugarspoon.icons'
+    namespace 'com.cora.icons'
     compileSdk 33
 
     defaultConfig {
@@ -27,6 +27,12 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.4.0'
     }
 }
 
