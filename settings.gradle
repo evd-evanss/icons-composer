@@ -27,7 +27,7 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "Icons Composer"
+rootProject.name = "Cora Icons"
 include ':app'
 include ':poet'
 include ':icons'

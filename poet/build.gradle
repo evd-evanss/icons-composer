@@ -1,5 +1,4 @@
 plugins {
-    id 'java-library'
     id 'org.jetbrains.kotlin.jvm'
     id("kotlin-kapt")
 }
@@ -15,6 +14,6 @@ dependencies {
 }
 
 task getIcons(type: JavaExec) {
-    mainClass.set('com.sugarspoon.composer.MainKt')
+    mainClass.set('com.cora.poet.MainKt')
     classpath = sourceSets.getByName("main").runtimeClasspath
 }
